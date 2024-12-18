@@ -149,7 +149,7 @@ def getProtGraph(pdb, dssp, cutoff):
         for i, j in zip(src.tolist(), dst.tolist())
     ]
 
-    graph.edata['e_ij'] = torch.stack(bond_feats)
+    graph.edata['bond'] = torch.stack(bond_feats)
 
     return graph
 
