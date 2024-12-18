@@ -4,8 +4,8 @@ import torch
 from pathlib import Path
 from torch.utils.data import DataLoader
 from src.dataset import MyDataset, my_collate_fn
-from src.model_RTM7 import DGLGraphTransformer, RTMScore
-from src.utils_6 import *
+from src.model import DGLGraphTransformer, RTMScore
+from src.utils import *
 
 # Configure logger
 def configure_logger(log_file=None):
